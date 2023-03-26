@@ -1,0 +1,87 @@
+body {
+	margin: 2% 20%;
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+}
+
+li {
+	font-weight: 600;
+	font-size: 1.5em;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+p,
+label {
+	font-size: .8em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+nav#ui {
+	display: flex;
+	flex-direction: row;
+}
+
+nav#ui>* {
+	font-size: .8em;
+	margin: .3em .5em;
+
+}
+
+div#current-liste {
+	font-family: monospace;
+}
+
+a {
+	color: midnightblue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: navy;
+	text-decoration: underline .2em;
+	transition: .2s;
+}
+
+a:visited {
+	color: inherit;
+}
+
+
+footer {
+	font-size: .5em;
+	font-family: monospace;
+}
+
+@media only screen and (max-device-width: 1000px) {
+	body {
+		font-size: 2em;
+		margin: 2%;
+	}
+
+	a {
+		font-size: 2em;
+	}
+
+	p,
+	a,
+	ul,
+	fieldset {
+		font-size: 1.25em;
+	}
+
+	nav#ui {
+		flex-direction: column;
+	}
+
+	nav#ui>* {
+		font-size: 2em;
+	}
+
+	input[type="text"] {
+		font-size: 1.5em;
+		width: 100%;
+	}
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/styles.css">
+	<meta charset="UTF-8">
+	<title>Célebrités</title>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<nav id="ui">
+		<button type="button" id="frch" data-url="france_swiss_famous.json">Francosuisse</button>
+		<button type="button" id="rest" data-url="all_time_famous.json">Reste du monde</button>
+		<div>
+			<label for="first-n">Parmi les N plus célèbres</label>
+			<input type="text" id="first-n" name="first-n" value="200">
+		</div>
+		<button type="button" id="reload">Reload</button>
+		<div id="current-liste"></div>
+	</nav>
+	<ul class="liste">
+	</ul>
+</body>
+
+<footer>
+	Using parts of the database described and created in: <br> Laouenan, M., Bhargava, P., Eyméoud, JB. et al. A
+	cross-verified
+	database of notable people, 3500BC-2018AD. Sci Data 9, 290 (2022). https://doi.org/10.1038/s41597-022-01369-4 <br>
+	The full dataset is available <a
+		href="https://data.sciencespo.fr/dataset.xhtml?persistentId=doi:10.21410/7E4/YLG6YR">here</a>, under a CC BY-SA
+	4.0 license.
+</footer>
+
+</html>
