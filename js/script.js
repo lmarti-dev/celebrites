@@ -8,7 +8,10 @@ var first_n = 200
 
 
 var random_array_item = function (arr, last_index = null) {
-  if (length == null && last_index < arr.length) {
+  if (length == null) {
+    last_index = arr.length
+  }
+  if (last_index > arr.length) {
     last_index = arr.length
   }
   return arr[last_index * Math.random() << 0];
